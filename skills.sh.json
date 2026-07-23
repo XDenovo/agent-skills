@@ -5,7 +5,7 @@
     {
       "title": "Engineering",
       "description": "Skills for developing and operating XDenovo repositories.",
-      "skills": ["to-issue", "implement", "open-pr", "close-issue", "ship"]
+      "skills": ["to-issue", "implement", "code-review", "open-pr", "close-issue", "ship"]
     },
     {
       "title": "Product Use",
