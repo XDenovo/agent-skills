@@ -1,0 +1,4 @@
+.DS_Store
+
+# Linked worktrees created for issue-scoped development
+/.worktrees/
