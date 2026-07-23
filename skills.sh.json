@@ -1,0 +1,16 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Engineering",
+      "description": "Skills for developing and operating XDenovo repositories.",
+      "skills": []
+    },
+    {
+      "title": "Product Use",
+      "description": "Skills for using published XDenovo products and public MCP capabilities.",
+      "skills": []
+    }
+  ]
+}

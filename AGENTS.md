@@ -53,6 +53,7 @@ skills/
 - Resolve files relative to the skill root. Do not use workspace-relative paths, developer-specific absolute paths, or dependencies outside the skill directory.
 - Prefer instructions for judgment-heavy workflows and scripts for deterministic operations. Scripts must declare their dependencies, validate inputs, produce actionable errors, and clean up temporary resources.
 - Record third-party licenses and attribution for bundled code, templates, data, or assets.
+- Update the root `skills.sh.json` in the same change whenever a published catalog skill is added, renamed, moved between `engineering` and `product-use`, or removed. Keep each published skill slug in the matching `Engineering` or `Product Use` grouping, and do not list hidden, unfinished, or otherwise unpublished skills.
 
 ## Plugin Packaging
 
@@ -76,7 +77,7 @@ skills/
 - `TODO: When the first skill lands, pin the skill validation tooling and document exact frontmatter, reference, and local discovery checks, including a non-installing skills CLI listing check.`
 - `TODO: When a skill first includes scripts, document its language-specific formatting, linting, test, and dependency checks.`
 - `TODO: When the first plugin lands, document exact Codex and Claude Code manifest, marketplace, packaging, and local-install smoke tests.`
-- `TODO: When public skills are ready for discovery, add and validate skills.sh.json groupings for Engineering and Product Use.`
+- `TODO: When the first public skill is ready for discovery, populate and validate the skills.sh.json groupings for Engineering and Product Use.`
 - `TODO: Before the first plugin release, define versioning, tag, changelog, and packaged-skill drift policies.`
 
 ## Git and GitHub Workflow
