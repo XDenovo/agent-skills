@@ -86,6 +86,9 @@ skills/
 - Use a Platform Initiative only when the change affects a cross-repository contract, architecture boundary, or coordinated release.
 - Preserve unrelated work, stage only intended paths, and report checks that were actually run.
 - Follow Conventional Commits.
+- This repository permits direct delivery on `main`: a maintainer may work from a clean local `main` synchronized with `origin/main`, validate the intended changes, stage only explicit paths, commit, and push normally to `origin/main`. Never force-push.
+- A Pull Request is optional. Prefer one when independent review is useful, the change has broad security or publishing impact, or required checks run only for PRs.
+- When direct delivery completes an Issue, record the commit and checks in the Issue and close it manually after the push.
 
 ## Canonical References
 
