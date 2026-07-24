@@ -93,9 +93,16 @@ FR-002: [NEEDS CLARIFICATION: ...]  <!-- use this tag instead of guessing -->
 ## Success criteria
 
 <Measurable, across the whole initiative.>
+
+## Implementation order
+
+- Wave 1 (parallel): <sub-issues that can start together, and why>
+- Wave 2 (after Wave 1): <dependent sub-issues and the exact prerequisite artifact or decision>
 ```
 
 The Initiative issue has no `## Branch` field of its own — branches live on its per-repo sub-issues.
+Use as many waves as the real dependency graph requires. If every sub-issue is independent, keep
+one parallel wave. If all work is serial, list one sub-issue per wave and explain every dependency.
 
 ## Setting Issue Type
 

@@ -9,7 +9,15 @@ Confirm which stages to run before starting — default to all four; if the user
 
 ## 1. to-issue
 
-Invoke `/to-issue`. Carry forward every issue it creates. A single-repo issue means the rest of this run stays in that one repo. A cross-repo Initiative means repeating steps 2-4 once per owning repo's sub-issue — each is otherwise independent of the others.
+Invoke `/to-issue`. Carry forward every issue it creates and the implementation waves it reports.
+A single-repo issue means the rest of this run stays in that one repo.
+
+For a cross-repo Initiative, run steps 2-4 according to those waves. Execute independent
+sub-issues in the same wave in parallel when the available agent surface supports parallel work.
+Do not start a later wave until the prerequisite issue has produced the contract, commit, release,
+template, or other artifact named by `/to-issue`. If parallel execution is unavailable, say so and
+process otherwise-independent work serially; do not misrepresent that execution constraint as an
+implementation dependency.
 
 ## 2. implement
 

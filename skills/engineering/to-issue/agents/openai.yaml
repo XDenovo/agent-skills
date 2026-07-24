@@ -1,4 +1,4 @@
 interface:
   display_name: "To Issue"
-  short_description: "Publish a design discussion as a GitHub issue spec"
-  default_prompt: "Use $to-issue to turn this design discussion into a GitHub issue."
+  short_description: "Publish issue specs and cross-repo execution waves"
+  default_prompt: "Use $to-issue to publish this design as issues and explain their implementation order."

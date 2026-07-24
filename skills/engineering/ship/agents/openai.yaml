@@ -1,4 +1,4 @@
 interface:
   display_name: "Ship"
-  short_description: "Orchestrate issue to merge end-to-end"
-  default_prompt: "Use $ship to take this discussion from issue to merged PR."
+  short_description: "Orchestrate dependency-aware issue delivery"
+  default_prompt: "Use $ship to deliver this discussion through dependency-aware implementation waves."
