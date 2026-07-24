@@ -31,7 +31,18 @@ Pick the issue type (Feature Spec, Bug Report, or Chore) that matches the change
 
 **Cross-repo**: create the Initiative issue in `XDenovo/platform` first (Initiative template, Issue Type `Initiative`), then one self-contained implementation issue per owning repo (that repo's matching template + its own `## Branch` field). Finish by linking every one of those sub-issues to the Initiative — the Initiative is only complete once each repo's sub-issue is attached, per root `AGENTS.md`'s Cross-Repository Workflow.
 
-## 5. Report back
+## 5. Verify Project status
+
+For every Issue created in step 4, poll the XDenovo Platform Project with
+`gh project item-list 1 --owner XDenovo --limit 1000 --format json` and match the exact Issue URL
+in `.items[].content.url`. Check at most 12 times with 5 seconds between attempts; automation is
+asynchronous, so absence or another status on an early attempt is not yet a failure.
+
+Every created Issue must appear with `Status` exactly `Todo`. Do not repair the Project item
+manually: if any Issue does not reach `Todo` within the bounded wait, stop this stage and report
+the Issue URL plus the last observed status so the automation failure remains visible.
+
+## 6. Report back
 
 Reply with every issue URL created (the Initiative first, then its sub-issues, if cross-repo) and the decided branch slug.
 
